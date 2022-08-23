@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fragment_nav"
+    android:orientation="vertical"
+    tools:context=".presentation.view.fragment.main.nav.NavUserInfoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/card_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_personal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/ic_default_avatar"
+                app:civ_border_color="@color/white_smoke"
+                app:civ_border_width="1dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/crl_open_gallery"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp"
+                android:elevation="2dp"
+                android:src="@drawable/ic_camera" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/card_view"
+            android:layout_alignBottom="@id/card_view"
+            android:layout_toEndOf="@id/card_view"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Nam Tran" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                tools:text="nam.td.986@aptechlaenrning.edu.vn" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/item_health_track"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_health"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:foregroundGravity="center"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imv_health"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_check_health"
+                    android:tint="@color/green_slight"
+                    tools:ignore="UseAppTint" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/card_view_health"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_inf_hint_health" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/user_inf_see_health"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_profile"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:foregroundGravity="center"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imv_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:tint="@color/yellow_dark"
+                    tools:ignore="UseAppTint" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/card_view_profile"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fragment_dt_profile_hint_profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/fragment_dt_profile_see_detail_profile"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_view_prescription"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_rate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:foregroundGravity="center"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imv_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_prescriptions" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/card_view_rate"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fragment_dt_profile_hint_prescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/fragment_dt_profile_prescription"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_feedback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:foregroundGravity="center"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imv_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_feed_back"
+                    app:tint="#2196F3" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/card_view_feedback"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_inf_hint_feedback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/user_inf_feed_back"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_logout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_log_out"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:foregroundGravity="center"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imv_log_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_logout"
+                    app:tint="#000000" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/card_view_log_out"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_inf_hint_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:text="@string/user_inf_log_out"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

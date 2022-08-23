@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchView</item>
+        <item name="actionOverflowButtonStyle">@style/ActionButtonOverflow</item>
+        <item name="colorSurface">@color/transparent</item>
+        <!-- Customize colorSecondary to change icon/text of FAB (maps to tint and rippleColor) -->
+        <item name="colorOnSecondary">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.DarkStatus">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <!-- Optional: set the status bar dark and content light. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>-->
+    </style>
+
+    <style name="AppTheme.LightStatus">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Optional: set to transparent if your app is drawing behind the status bar. -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <!-- Optional: set the status bar dark and content light. -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <!-- <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>-->
+    </style>
+
+    <style name="ActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:tint">@color/toolBarColor</item>
+        <item name="android:src">@drawable/ic_dot_menu</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">@color/toolBarColor</item>
+    </style>
+
+    <style name="AppToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="titleTextColor">@color/toolBarColor</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="AppToolbar.NavBack">
+        <item name="navigationIcon">@drawable/ic_back</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="navigationContentDescription">@string/content_desc_back</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">@color/separatorDivider</item>
+    </style>
+
+    <style name="Divider.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="Divider.Horizontal.Medium">
+        <item name="android:layout_height">5dp</item>
+    </style>
+
+    <style name="Divider.Horizontal.Large">
+        <item name="android:layout_height">8dp</item>
+    </style>
+
+    <style name="Divider.Vertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Divider.Vertical.Medium">
+        <item name="android:layout_width">5dp</item>
+    </style>
+
+    <style name="Divider.Vertical.Large">
+        <item name="android:layout_width">8dp</item>
+    </style>
+
+    <style name="AuthTextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_text_input_layout</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="hintTextColor">@color/gray</item>
+        <item name="boxStrokeColor">@color/color_text_input_box_stroke</item>
+        <item name="endIconTint">@color/white</item>
+    </style>
+
+    <style name="AuthTextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">top|start</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextInputEditText.Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="TextInputEditText.Text.SingleLine">
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">100</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="TextInputEditText.Text.SingleLine.NoEditInput">
+        <item name="android:editable">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">false</item>
+        <item name="hintTextColor">@color/accent</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:foreground">?android:selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="TextInputLayout">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">#92BCFF</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxStrokeColor">@color/edit_text_box_stroke_color</item>
+        <item name="boxStrokeErrorColor">@color/red_slight</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1.2dp</item>
+        <item name="errorEnabled">true</item>
+        <item name="hintTextColor">@color/edit_text_box_stroke_color</item>
+    </style>
+
+    <style name="TextInputLayout.Custom">
+        <item name="endIconMode">custom</item>
+    </style>
+
+    <style name="TextInputLayout.Custom.Date">
+        <item name="endIconDrawable">@drawable/ic_calendar1</item>
+    </style>
+
+    <style name="TextInputLayout.Custom.Time">
+        <item name="endIconDrawable">@drawable/ic_clock</item>
+    </style>
+
+</resources>

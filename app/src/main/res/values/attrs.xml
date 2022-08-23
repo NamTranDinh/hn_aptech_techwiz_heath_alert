@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OtpEditText">
+        <attr name="otp_max_length" format="integer" />
+        <attr name="otp_space" format="dimension" />
+        <attr name="otp_line_stroke" format="dimension" />
+        <attr name="otp_text_color" format="color" />
+        <attr name="otp_line_color" format="color" />
+
+    </declare-styleable>
+
+</resources>

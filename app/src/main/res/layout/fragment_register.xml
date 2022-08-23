@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:background="@drawable/background_register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/AppToolbar.NavBack"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_header_text"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/register_firstname_layout"
+                    style="@style/AuthTextInputLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:hint="@string/register_first_name"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/AuthTextInputEditText"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/register_lastname_layout"
+                    style="@style/AuthTextInputLayout"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:hint="@string/register_last_name"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/AuthTextInputEditText"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_email_layout"
+                style="@style/AuthTextInputLayout"
+                android:layout_marginTop="25dp"
+                android:hint="@string/login_hint_email"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/AuthTextInputEditText"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_password_layout"
+                style="@style/AuthTextInputLayout"
+                android:layout_marginTop="25dp"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/AuthTextInputEditText"
+                    android:hint="@string/login_hint_password"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="32" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/register_cf_password_layout"
+                style="@style/AuthTextInputLayout"
+                android:layout_marginTop="25dp"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/AuthTextInputEditText"
+                    android:hint="@string/login_hint_re_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="32" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white_smoke"
+                    android:checked="true"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:text="User"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:buttonTint="@color/white_smoke"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="0dp"
+                    android:text="Doctor"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_radius_20"
+                android:elevation="5dp"
+                android:text="@string/register"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/register_privacy_policy"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

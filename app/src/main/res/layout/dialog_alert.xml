@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_icon"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        tools:src="@drawable/ic_logout" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textColor="@color/red_slight"
+        android:textSize="18sp"
+        tools:text="@string/dialog_confirm_logout_msg" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_radius_20"
+        android:backgroundTint="@color/green_slight"
+        android:elevation="6dp"
+        android:text="@string/alert_dialog_ok"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+</LinearLayout>

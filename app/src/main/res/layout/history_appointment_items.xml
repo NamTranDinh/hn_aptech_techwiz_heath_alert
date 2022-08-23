@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_radius_20"
+    android:backgroundTint="#86BEF6"
+    android:orientation="horizontal"
+    android:paddingVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ic_default_avatar" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_schedule_circle" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:textColor="@color/white_smoke"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Dr.Doom" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textColor="@color/white_smoke"
+            android:textSize="16sp"
+            tools:text="Ha Noi" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:text="14:00" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_set_again"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_radius_8"
+        android:backgroundTint="#FBC02D"
+        android:paddingHorizontal="10dp"
+        android:text="@string/nav_history_set_again"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_radius_8"
+        android:backgroundTint="#FF3D00"
+        android:paddingHorizontal="10dp"
+        android:text="@string/nav_history_cancel"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_radius_8"
+        android:backgroundTint="#6CE408"
+        android:paddingHorizontal="10dp"
+        android:text="@string/nav_history_confirm"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+</LinearLayout>

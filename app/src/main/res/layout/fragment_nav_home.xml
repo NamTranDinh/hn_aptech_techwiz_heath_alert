@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.view.fragment.main.nav.NavHomeFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="50dp"
+        app:civ_border_width="1.5dp"
+        app:civ_border_color="@color/primary"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="25dp"
+        android:src="@mipmap/app_launcher_round" />
+
+    <LinearLayout
+        android:id="@+id/header_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/img_avatar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:gravity="center|right"
+            android:text="@string/nav_home_fragment_be_healthy"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center|end"
+            android:text="Tran Trung"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/doctor_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header_box"
+        android:gravity="center|start"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/nav_home_doctor_category"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_baseline_navigate_next_24"
+        app:drawableTint="@color/blue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_doctor_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doctor_category"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/nav_home_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/category_doctor_list"
+        android:gravity="center|start"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/nav_home_fragment_my_appointment"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:drawableRightCompat="@drawable/ic_baseline_navigate_next_24"
+        app:drawableTint="@color/blue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_list_appointment_of_day"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/nav_home_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/home_appointment_items" />
+
+
+    <ImageView
+        android:id="@+id/imv_nothing"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/empty_page"
+        android:visibility="visible" />
+
+</RelativeLayout>

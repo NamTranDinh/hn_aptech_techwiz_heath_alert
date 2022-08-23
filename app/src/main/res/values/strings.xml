@@ -1,0 +1,147 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Health Alert</string>
+
+    <string name="content_desc_back">Back</string>
+
+    <string name="toast_back_press">Back again to exists</string>
+
+    <!--    fragment login-->
+    <string name="login_header_text">My Health Record</string>
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_hint_re_password">Confirm password</string>
+    <string name="login_forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="login_new_user_question">New user? Register now.</string>
+
+    <!--    fragment_register-->
+    <string name="register_header_text">Here\'s your first step\nwith us</string>
+    <string name="register_first_name">First Name</string>
+    <string name="register_last_name">Last Name</string>
+    <string name="register_gender">Gender</string>
+    <string name="register">Register</string>
+    <string name="register_privacy_policy">By click register, you agree to Csupporter Company’s\n<b>Terms of Use</b> and <b>Privacy Policy</b>.</string>
+
+    <!--    fragment forgot password-->
+    <string name="forgot_pw_forgot_password">Forgot Password</string>
+    <string name="forgot_pw_email">Email:</string>
+    <string name="forgot_pw_email_hint">Enter your email</string>
+    <string name="forgot_pw_btn_submit">Get OTP</string>
+    <string name="forgot_pw_back_to_login">Back to login</string>
+
+    <!--    fragment enter OPT-->
+    <string name="enter_otp_enter_otp">Enter OTP</string>
+    <string name="enter_otp_content">An 6 digit code has been sent to</string>
+    <string name="enter_otp_btn_verify">Verify Code</string>
+    <string name="enter_otp_don_not_receiver_otp">Don\'t receiver the OTP?</string>
+    <string name="enter_otp_resent_opt">Resent otp</string>
+    <string name="enter_otp_msg">OTP code is only valid for</string>
+    <string name="enter_otp_duration_of_otp">60s</string>
+
+    <!--    fragment reset password-->
+    <string name="reset_pw_reset_password">Reset Password</string>
+    <string name="reset_pw_enter_old_pw">Enter old password</string>
+    <string name="reset_pw_enter_new_pw">Enter new password</string>
+    <string name="reset_pw_reenter_new_pw">ReEnter new password</string>
+    <string name="reset_pw_btn_confirm">Confirm</string>
+
+    <!-- fragment navigation user information   -->
+    <string name="user_inf_email">nam.td.986@aptechlearning.edu.vn</string>
+    <string name="user_inf_phone_numb">0123456789</string>
+    <string name="user_inf_see_health">See detail your health</string>
+    <string name="user_inf_setting_notify">Setting notification</string>
+    <string name="user_inf_feed_back">Share your feedback</string>
+    <string name="user_inf_rate">Rate us fire</string>
+    <string name="user_inf_log_out">Log out</string>
+    <string name="user_inf_hint_health">Health</string>
+    <string name="user_inf_hint_notify">Notify</string>
+    <string name="user_inf_hint_rate">Rate</string>
+    <string name="user_inf_hint_feedback">Feedback</string>
+    <string name="user_inf_hint_logout">Log out</string>
+
+    <!--    bottom_navigation-->
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_user">User</string>
+    <string name="bottom_navigation_calendar">Calendar</string>
+    <string name="bottom_navigation_search">Search</string>
+    <string name="bottom_navigation_history">History</string>
+    <!--    nav_home_fragment-->
+    <string name="nav_home_fragment_hint_search_bar">Find a doctor or speciality</string>
+    <string name="nav_home_fragment_my_appointment">My Appointment</string>
+    <string name="nav_home_fragment_be_healthy">Be healthy</string>
+    <string name="nav_home_doctor_category">Doctor Category</string>
+
+
+    <!--    dialog confirm-->
+    <string name="dialog_confirm_logout_msg">Are you sure want to log out?</string>
+    <string name="dialog_confirm_btn_yes">Yes</string>
+    <string name="dialog_confirm_btn_no">No</string>
+
+    <!--    alert dialog-->
+    <string name="alert_dialog_ok">OK</string>
+
+    <!--    item health track-->
+
+    <!--    dialog detail track-->
+    <string name="detail_track_the_daily_track">The Detail Daily Track</string>
+    <string name="detail_track_information_personal">Information Personal</string>
+    <string name="detail_track_your_name">Your name</string>
+    <string name="detail_track_age">Age</string>
+    <string name="detail_track_height">Height</string>
+    <string name="detail_track_weight">Weight</string>
+    <string name="detail_track_heath_indicator">Heath indicators</string>
+    <string name="detail_track_heart_beat">Heart beat</string>
+    <string name="detail_track_blood_pressure">Blood pressure :</string>
+    <string name="detail_track_blood_sugar">Blood sugar :</string>
+    <string name="detail_track_gender">Gender</string>
+    <string name="detail_track_notes">Other :</string>
+
+    <!--    add new track fragment-->
+    <string name="track_add_new">Add New</string>
+    <string name="track_note">Note for your status</string>
+    <string name="track_height">Height :</string>
+    <string name="track_weight">Weight :</string>
+    <string name="track_heart_beat">Heart beat :</string>
+    <string name="track_blood_pressure">Blood pressure :</string>
+    <string name="track_blood_sugar">Blood sugar :</string>
+
+    <!--    edit track fragment-->
+    <string name="edit_track_edit_new">Edit New</string>
+
+
+    <!--    fragment dt home-->
+    <string name="fragment_dt_home_be_healthy">Be healthy</string>
+
+    <!--    fragment dt profile-->
+    <string name="fragment_dt_profile_see_detail_profile">View your information profile</string>
+    <string name="fragment_dt_profile_hint_profile">Profile</string>
+    <string name="fragment_dt_profile_prescription">View and perform actions on prescriptions</string>
+    <string name="fragment_dt_profile_hint_prescription">Prescription</string>
+    <string name="fragment_dt_profile_logout">Log out</string>
+    <string name="fragment_dt_profile_hint_logout">Log out</string>
+    <string name="fragment_dt_profile_feedback">Feedback</string>
+    <string name="fragment_dt_profile_hint_feedback">Share your feedback</string>
+
+    <!--    fragment history meeting-->
+    <string name="fragment_dt_history_meeting_notify">No notice</string>
+    <string name="fragment_dt_history_tv_history">History meeting</string>
+
+    <string name="nav_history_set_again">Set Again</string>
+    <string name="nav_history_cancel">Cancel</string>
+    <string name="nav_history_confirm">Confirm</string>
+
+    <!-- start permissionX -->
+    <string name="permission_explain_read_storage_request_reason">This app need read storage permission to pick image from gallery</string>
+    <string name="permission_forward_to_settings">You need to allow necessary permissions in Settings manually</string>
+    <string name="permission_button_positive">OK</string>
+    <string name="permission_button_negative">Cancel</string>
+    <string name="permission_button_go_setting">Go setting</string>
+
+
+    <!--   nav search fragment value spinner search-->
+    <string-array name="src_spinner">
+        <item>Doctor</item>
+        <item>Prescription</item>
+        <item>Appointment</item>
+    </string-array>
+</resources>
